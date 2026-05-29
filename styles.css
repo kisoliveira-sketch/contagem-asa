@@ -111,14 +111,17 @@ p {
 }
 
 h1 {
-  max-width: 20ch;
-  width: 100%;
+  max-width: 100%;
+  width: fit-content;
   margin-inline: auto;
-  font-size: clamp(1rem, 2vw, 2rem);
+  font-size: clamp(1.56rem, 3.12vw, 3.12rem);
   line-height: 1.02;
   letter-spacing: 0.03em;
   font-weight: 700;
   text-wrap: balance;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title-nowrap {
@@ -127,6 +130,9 @@ h1 {
 
 .title-line {
   display: block;
+  width: fit-content;
+  text-align: center;
+  margin-inline: auto;
 }
 
 .intro {
